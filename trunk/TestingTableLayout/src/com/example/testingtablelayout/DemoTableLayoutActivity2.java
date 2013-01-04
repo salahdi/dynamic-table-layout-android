@@ -35,7 +35,7 @@ public class DemoTableLayoutActivity2 extends Activity implements
 	{
 		if (v == btnAddlineToTable)
 		{
-			TableLayout tl = (TableLayout)findViewById(R.id.tableLayout1);
+			TableLayout tl = (TableLayout)findViewById(R.id.tableLayoutActivity2);
 			TableRow row = new TableRow(this);
 			
 			TextView t1 = new TextView(this);

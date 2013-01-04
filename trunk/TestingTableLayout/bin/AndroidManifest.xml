@@ -20,13 +20,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity 
-            android:name="DemoTableLayoutActivity1"></activity>
-        
-        <activity 
-            android:name="DemoTableLayoutActivity2"></activity>
-        
+        <activity android:name="DemoTableLayoutActivity1" >
+        </activity>
+        <activity android:name="DemoTableLayoutActivity2" >
+        </activity>
+        <activity
+            android:name=".DemoTableLayoutActivity3"
+            android:label="@string/title_activity_demo_table_layout_activity3" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
