@@ -10,7 +10,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity implements OnClickListener{
 
-	Button btnDemoLayout1,btnDemoLayout2;
+	Button btnDemoLayout1,btnDemoLayout2,btnDemoLayout3;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -20,9 +20,11 @@ public class MainActivity extends Activity implements OnClickListener{
         btnDemoLayout1 = (Button)findViewById(R.id.buttonDemoLayout1);
         
         btnDemoLayout2 = (Button)findViewById(R.id.buttonDemoLayout2);
+        btnDemoLayout3 = (Button)findViewById(R.id.buttonDemoLayout3);
         
         btnDemoLayout1.setOnClickListener(this);
         btnDemoLayout2.setOnClickListener(this);
+        btnDemoLayout3.setOnClickListener(this);
         
     }
 
@@ -44,6 +46,13 @@ public class MainActivity extends Activity implements OnClickListener{
 		if(btnDemoLayout2 == v)
 		{
 			Intent intent = new Intent(this, DemoTableLayoutActivity2.class);
+			
+			startActivity(intent);
+		}
+		
+		if(btnDemoLayout3 == v)
+		{
+			Intent intent = new Intent(this, DemoTableLayoutActivity3.class);
 			
 			startActivity(intent);
 		}

@@ -15,5 +15,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Demo Layout 2" />
+        
+        <Button
+            android:id="@+id/buttonDemoLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Demo Layout 3" />
 
     </LinearLayout>
