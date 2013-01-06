@@ -23,36 +23,40 @@
 
             <TableLayout
                 android:id="@+id/TableLayout01"
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:stretchColumns="0" >
-
-                <TableRow
-                    android:id="@+id/TableRow01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" >
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-                    </LinearLayout>
-
-                    <TextView
-                        android:id="@+id/TextView01"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:text="textfield 1-1" >
-                    </TextView>
-
-                    <CheckBox
-                        android:id="@+id/CheckBox01"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" >
-                    </CheckBox>
-                </TableRow>
+                android:layout_margin="3dp"
+                android:background="@color/blue"
+                android:showDividers="middle"
+                android:splitMotionEvents="true"
+                android:stretchColumns="*" >
             </TableLayout>
         </HorizontalScrollView>
     </ScrollView>
+
+    <TableRow
+        android:layout_margin="1dp"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+         >
+
+        <TextView
+            android:id="@+id/TextViewReference"
+            android:layout_margin="1dp"
+            android:background="@color/yellow"
+            android:text="first column"
+            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             />
+
+        <TextView
+            android:layout_margin="1dp"
+            android:background="@color/yellow"
+            android:text="second column" 
+            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            />
+    </TableRow>
 
 </LinearLayout>
