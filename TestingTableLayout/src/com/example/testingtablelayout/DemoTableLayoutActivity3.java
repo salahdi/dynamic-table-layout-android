@@ -36,7 +36,7 @@ public class DemoTableLayoutActivity3 extends Activity implements
 		btn = (Button) findViewById(R.id.Button01);
 		btn.setOnClickListener(this);
 
-		putListOnTableLayout();
+		
 
 	}
 
@@ -125,7 +125,7 @@ public class DemoTableLayoutActivity3 extends Activity implements
 
 
 			tableRow.setLayoutParams(tableRowParams);
-			tableRow.setBackgroundColor(getResources().getColor(R.color.green));
+			tableRow.setBackgroundColor(getResources().getColor(R.color.gray));
 
 			for (int j = 0; j < listOfArrayOfString.get(i).length; j++)
 			{
@@ -141,7 +141,7 @@ public class DemoTableLayoutActivity3 extends Activity implements
 				if (i == 0)
 				{
 					textView.setBackgroundColor(getResources().getColor(
-							R.color.lightGray));
+							R.color.ligth_gray));
 				} else
 				{
 					textView.setBackgroundColor(getResources().getColor(
